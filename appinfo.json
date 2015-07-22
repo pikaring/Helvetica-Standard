@@ -1,0 +1,69 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "pikaring@gmail.com",
+    "longName": "Helvetica Standard",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/3.png",
+                "name": "IMAGE_BATTERY_3",
+                "type": "png"
+            },
+            {
+                "file": "images/2.png",
+                "name": "IMAGE_BATTERY_2",
+                "type": "png"
+            },
+            {
+                "file": "images/1.png",
+                "name": "IMAGE_BATTERY_1",
+                "type": "png"
+            },
+            {
+                "file": "images/0.png",
+                "name": "IMAGE_BATTERY_0",
+                "type": "png"
+            },
+            {
+                "file": "images/BT1.png",
+                "name": "IMAGE_BT_OFF",
+                "type": "png"
+            },
+            {
+                "file": "images/BT.png",
+                "name": "IMAGE_BT_ON",
+                "type": "png"
+            },
+            {
+                "file": "fonts/arial.ttf",
+                "name": "FONT_14",
+                "type": "font"
+            },
+            {
+                "file": "images/mondai-mono.png",
+                "name": "IMAGE_BACKGROUND_MONO",
+                "type": "png"
+            },
+            {
+                "file": "images/mondai.png",
+                "name": "IMAGE_BACKGROUND",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "HS",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "22ff6ab3-0638-42cf-a579-035afd7d1b38",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
