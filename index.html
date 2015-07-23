@@ -21,7 +21,7 @@
    <div id="contents">
       <h1><a href="index.html">Choose Watch Color</a></h1>
       <p>
-      You can choose the color of the clock face.
+      Choose the color of the clock face.
       </p>
       
       <form>
@@ -30,8 +30,8 @@
       <input type="radio" name="color" id="black">black
       <input type="radio" name="color" id="red">red
       </p>
-      <p><button type="submit" value="SAVE" id="b-save">SAVE</button></p>
-      <p><button type="submit" value="CANCEL" id="b-cancel">CANCEL</button></p>
+      <p><button type="submit" id="b-save">SAVE</button></p>
+      <p><button type="submit" id="b-cancel">CANCEL</button></p>
       </form>
 
    </div><!-- /#contents-->
@@ -56,13 +56,12 @@
   		
       $().ready(function() {
         $("#b-cancel").click(function() {
-          console.log("Cancel");
+          console.log("Canceling");
           document.location = "pebblejs://close";
         });
 
         $("#b-save").click(function() {
           console.log("Save");
-
           var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(saveOptions()));
           console.log("Warping to: " + location);
           console.log(location);
