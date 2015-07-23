@@ -8,6 +8,8 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <link rel="stylesheet" href="css/common.css" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <title>Helvetica-Standard</title>
@@ -44,11 +46,11 @@
   		var flagBlack = document.getElementById("black").checked;
   		var flagRed = document.getElementById("red").checked;
   		if(flagWhite == true){
-  			return "white";
+  			return 0;
   		}else if(flagBlack == true){
-  			return "black";
+  			return 1;
   		}else if(flagRed == true){
-  			return "red";
+  			return 2;
   		}
   		}
   		
