@@ -24,9 +24,9 @@
       
       <form>
       <p>
-      <input type="radio" name="color" value="white" checked>white      
-      <input type="radio" name="color" value="black">black
-      <input type="radio" name="color" value="red">red
+      <input type="radio" name="color" id="white" checked>white      
+      <input type="radio" name="color" id="black">black
+      <input type="radio" name="color" id="red">red
       </p>
       <p><input type="submit" value="SAVE" id="b-save"></p>
       <p><input type="submit" value="CANCEL" id="b-cancel"></p>
@@ -39,28 +39,19 @@
 
 <script>
 
-function saveOptions() {
-        var options = {
-          'name': $("#name").val(),
-          'special-feature': $("#special-feature").val(),
-          'checkbox-cheetos': $("#checkbox-cheetos").is(':checked'),
-          'checkbox-doritos': $("#checkbox-doritos").is(':checked'),
-          'checkbox-fritos': $("#checkbox-fritos").is(':checked'),
-          'checkbox-sunchips': $("#checkbox-sunchips").is(':checked')
-        }
-        return options;
-      }
-
       function saveOptions() {
-      	var color;
-      	for(var i=0; i<radioList.length; i++){
-      		if (radioList[i].checked) {
-      			color = i;
-      		}
-		}
-        return color;
-        }
-
+		var flagWhite = document.getElementById("white").checked;
+  		var flagBlack = document.getElementById("black").checked;
+  		var flagRed = document.getElementById("red").checked;
+  		if(flagWhite == true){
+  			return "white";
+  		}else if(flagBlack == true){
+  			return "black";
+  		}else if(flagRed == true){
+  			return "red";
+  		}
+  		}
+  		
       $().ready(function() {
         $("#b-cancel").click(function() {
           console.log("Cancel");
