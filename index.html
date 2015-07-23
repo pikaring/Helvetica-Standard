@@ -58,8 +58,8 @@
           document.location = "pebblejs://close";
         });
 
-        $("#b-submit").click(function() {
-          console.log("Submit");
+        $("#b-save").click(function() {
+          console.log("Save");
 
           var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(saveOptions()));
           console.log("Warping to: " + location);
