@@ -36,18 +36,30 @@
    <div id="footer">
    </div><!-- /#footer-->
 </div><!-- /#top-->
+
 <script>
 
+function saveOptions() {
+        var options = {
+          'name': $("#name").val(),
+          'special-feature': $("#special-feature").val(),
+          'checkbox-cheetos': $("#checkbox-cheetos").is(':checked'),
+          'checkbox-doritos': $("#checkbox-doritos").is(':checked'),
+          'checkbox-fritos': $("#checkbox-fritos").is(':checked'),
+          'checkbox-sunchips': $("#checkbox-sunchips").is(':checked')
+        }
+        return options;
+      }
 
       function saveOptions() {
-        var color = {
-			for(var i=0; i<radioList.length; i++){
-			if (radioList[i].checked) {
-			return i;}
-			}
-        }
+      	var color;
+      	for(var i=0; i<radioList.length; i++){
+      		if (radioList[i].checked) {
+      			color = i;
+      		}
+		}
         return color;
-      }
+        }
 
       $().ready(function() {
         $("#b-cancel").click(function() {
