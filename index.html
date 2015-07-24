@@ -26,10 +26,13 @@
       
       <form>
       <p>
-      <input type="radio" name="color" id="white" checked>white      
-      <input type="radio" name="color" id="black">black
-      <input type="radio" name="color" id="blue">blue
-      <input type="radio" name="color" id="green">green
+      <input type="radio" name="color" id="white" checked>white</input>      
+      <input type="radio" name="color" id="black">black</input>
+      </p>
+      <h2>Basalt Only!</h2>
+      <p>
+      <input type="radio" name="color" id="blue">blue</input>
+      <input type="radio" name="color" id="red">red</input>
       </p>
       <p><button type="submit" id="b-save">SAVE</button></p>
       <p><button type="submit" id="b-cancel">CANCEL</button></p>
@@ -46,7 +49,7 @@
 		var flagWhite = document.getElementById("white").checked;
   		var flagBlack = document.getElementById("black").checked;
   		var flagBlue  = document.getElementById("blue").checked;
-  		var flagGreen = document.getElementById("green").checked;
+  		var flagRed = document.getElementById("red").checked;
   		if(flagWhite == true){
   			return 0;
   		}else if(flagBlack == true){
