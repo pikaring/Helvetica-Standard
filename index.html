@@ -33,6 +33,7 @@
       <p>
       <input type="radio" name="color" id="blue">blue</input>
       <input type="radio" name="color" id="red">red</input>
+      <input type="radio" name="color" id="yellow">yellow</input>
       </p>
       <p><button type="submit" id="b-save">SAVE</button></p>
       <p><button type="submit" id="b-cancel">CANCEL</button></p>
@@ -50,15 +51,17 @@
   		var flagBlack = document.getElementById("black").checked;
   		var flagBlue  = document.getElementById("blue").checked;
   		var flagRed = document.getElementById("red").checked;
+  		var flagYellow = document.getElementById("yellow").checked;
   		if(flagWhite == true){
   			return 0;
   		}else if(flagBlack == true){
   			return 1;
   		}else if(flagBlue == true){
   			return 2;
-  		}else if(flagGreen == true){
+  		}else if(flagRed == true){
   			return 3;
-  		}
+  		}else if(flagYellow == true){
+  			return 4;
   		}
   		
       $().ready(function() {
