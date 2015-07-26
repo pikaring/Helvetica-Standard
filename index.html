@@ -22,14 +22,29 @@
 </div><!-- /#header-->
 <div id="contents">
 <h1><a href="index.html">configuration</a></h1>
-<p>Choose the color.</p>
+<p>Choose color.</p>
 <form>
 <p>
 <select id="color" size="4">
-	<option value="1" selected>white</option>
-	<option value="2">black</option>
-	<option value="3">blue</option>
-	<option value="4">red</option>
+	<option value="0" selected>white</option>
+	<option value="1">black</option>
+	<option value="2">blue</option>
+	<option value="3">red</option>
+</select>
+</p>
+
+<p>Choose weather timezone.</p>
+<p>
+<select id="weather" size="4">
+	<option value="0" selected>now</option>
+	<option value="1">+3h</option>
+	<option value="2">+6h</option>
+	<option value="3">+9h</option>
+	<option value="4">+12h</option>
+	<option value="5">+15h</option>
+	<option value="6">+18h</option>
+	<option value="7">+21h</option>
+	<option value="8">+24h</option>
 </select>
 </p>
 
@@ -47,8 +62,11 @@
 
 function saveOptions() {
 	var colorValue = parseInt($('#color').val());
-<!--alert(colorValue);-->	
-	return colorValue;
+	var weatherValue = parseInt($('#weather').val());
+	var sendValue =[colorValue,weatherValue];
+<!--alert(sendValue);-->	
+alert(sendValue);
+	return sendValue;
 }
 
 $().ready(function() 
