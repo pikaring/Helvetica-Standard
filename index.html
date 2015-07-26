@@ -48,11 +48,11 @@
 </select>
 </p>
 
-<p>‹C/‹F</p>
+<p>Celsius/Fahrenheit</p>
 <p>
 <select id="temp" size="2">
-	<option value="0" selected>‹C/</option>
-	<option value="1">‹F</option>
+	<option value="0" selected>C/</option>
+	<option value="1">F</option>
 </select>
 </p>
 
@@ -71,7 +71,7 @@
 function saveOptions() {
 	var colorValue = parseInt($('#color').val());
 	var weatherValue = parseInt($('#weather').val());
-	var weatherValue = parseInt($('#temp').val());
+	var tempValue = parseInt($('#temp').val());
 	var sendValue =[colorValue,weatherValue,tempValue];
 <!--alert(sendValue);-->	
 	return sendValue;
