@@ -7,8 +7,10 @@
 <meta http-equiv="imagetoolbar" content="no" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/common.css" type="text/css" /> 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- 
+ -->
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
@@ -19,15 +21,23 @@
    <div id="header">
    </div><!-- /#header-->
    <div id="contents">
-      <h1><a href="index.html">Choose Watch Color</a></h1>
+      <h1><a href="index.html">configuration</a></h1>
       <p>
-      Choose the color of the clock face.
+      Choose the color.
       </p>
-      
       <form>
       <p>
+      <select name="color" size="4">
+      <option id="white" selected>white</option>
+      <option id="black">black</option>
+      <option id="blue">blue</option>
+      <option id="red">red</option>      
+      </select>
+      </p>
+      <!-- 
       <input type="radio" name="color" id="white" checked>white</input>      
       <input type="radio" name="color" id="black">black</input>
+      <p>
       </p>
       <h2>Basalt Only!</h2>
       <p>
@@ -35,6 +45,7 @@
       <input type="radio" name="color" id="red">red</input>
       <input type="radio" name="color" id="yellow">yellow</input>
       </p>
+       -->
       <p><button type="submit" id="b-save">SAVE</button></p>
       <p><button type="submit" id="b-cancel">CANCEL</button></p>
       </form>
