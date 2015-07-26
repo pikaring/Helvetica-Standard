@@ -58,11 +58,10 @@
 <script>
 
       function saveOptions() {
-		var flagWhite = document.getElementById("white").checked;
-  		var flagBlack = document.getElementById("black").checked;
-  		var flagBlue  = document.getElementById("blue").checked;
-  		var flagRed = document.getElementById("red").checked;
-  		var flagYellow = document.getElementById("yellow").checked;
+		var flagWhite = document.getElementById("white").selected;
+  		var flagBlack = document.getElementById("black").selected;
+  		var flagBlue  = document.getElementById("blue").selected;
+  		var flagRed = document.getElementById("red").selected;
   		if(flagWhite == true){
   			return 0;
   		}else if(flagBlack == true){
@@ -71,8 +70,6 @@
   			return 2;
   		}else if(flagRed == true){
   			return 3;
-  		}else if(flagYellow == true){
-  			return 4;
   		}	
   	}
   		
