@@ -58,6 +58,25 @@
 <script>
 
       function saveOptions() {
+      var flagColor = document.getElementById("color").value;
+      switch(flagColor){
+      	case white:
+      		return 0;
+      	break;      	
+      	case black:
+      		return 1;
+      	break;
+      	case blue:
+      		return 2;
+      	break;
+      	case red:
+      		return 3;
+      	break;
+      	default:
+      		return 3;
+      	break;     
+      }
+<!-- 
 		var flagWhite = document.getElementById("white").selected;
   		var flagBlack = document.getElementById("black").selected;
   		var flagBlue  = document.getElementById("blue").selected;
@@ -72,7 +91,8 @@
   			return 3;
   		}	
   	}
-  		
+  	
+ -->	
       $().ready(function() {
         $("#b-cancel").click(function() {
           console.log("Canceling");
