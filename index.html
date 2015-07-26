@@ -27,11 +27,11 @@
       </p>
       <form>
       <p>
-      <select name="color" size="4">
-      <option id="white" selected>white</option>
-      <option id="black">black</option>
-      <option id="blue">blue</option>
-      <option id="red">red</option>      
+      <select id="color" size="4">
+      <option value="1" selected>white</option>
+      <option value="2">black</option>
+      <option value="3">blue</option>
+      <option value="4">red</option>      
       </select>
       </p>
       <!-- 
@@ -58,8 +58,13 @@
 <script>
 
       function saveOptions() {
-      var flagColor = document.getElementById("color").value;
-      switch(flagColor){
+      var color = document.getElementById("color");
+      var options = document.getElementById("color").options;
+      return options.item(select.selectedIndex).value;
+      }
+ 
+<!-- 
+     switch(flagColor){
       	case white:
       		return 0;
       	break;      	
@@ -76,8 +81,7 @@
       		return 3;
       	break;     
       }
-<!-- 
-		var flagWhite = document.getElementById("white").selected;
+      		var flagWhite = document.getElementById("white").selected;
   		var flagBlack = document.getElementById("black").selected;
   		var flagBlue  = document.getElementById("blue").selected;
   		var flagRed = document.getElementById("red").selected;
