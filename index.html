@@ -64,6 +64,14 @@
 </select>
 </p>
 
+<p>Do you want disable the seconds hand?</p>
+<p>
+<select id="temp" size="2">
+	<option value="0" selected>disable</option>
+	<option value="1">able</option>
+</select>
+</p>
+
 <p><input type="submit" id="b-save" value="save"></input></p>
 <p><input type="submit" id="b-cancel" value="cancel"></input></p>
 
@@ -80,7 +88,8 @@ function saveOptions() {
 	var colorValue = parseInt($('#color').val());
 	var weatherValue = parseInt($('#weather').val());
 	var tempValue = parseInt($('#temp').val());
-	var sendValue =[colorValue,weatherValue,tempValue];
+	var secondsValue = parseInt($('#temp').val());
+	var sendValue =[colorValue,weatherValue,tempValue,secondsValue];
 <!--alert(sendValue);-->	
 	return sendValue;
 }
